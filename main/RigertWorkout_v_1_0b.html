@@ -6,14 +6,8 @@
 <!--limks for CSS files-->    
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">   
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">   
-    <link href="dist/css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
     <link rel="stylesheet" href="main.css">
-    
-<!--limks for JS files-->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="path/to/lightbox.js"></script>
-    <script type='text/javascript' src='script.js'></script>
 
   </head>
 
@@ -47,23 +41,26 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <img src="img/content_1.jpg">
+                        <a  href="img/content_1.jpg" data-lightbox="content_1"><img src="img/content_1.jpg" alt="content_1" /></a>
+                        <!--<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>-->
+
+                        <!--<img src="img/content_1.jpg">-->
                     </div>
                     <div class="thumbnail">
-                        <img src="img/content_2.jpg">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <img src="img/content_3.jpg">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="img/content_4.jpg">
+                        <a  href="img/content_2.jpg" data-lightbox="content_2"><img src="img/content_2.jpg" alt="content_2" /></a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <img src="img/content_5.jpg">
+                        <a  href="img/content_3.jpg" data-lightbox="content_3"><img src="img/content_3.jpg" alt="content_3" /></a>
+                    </div>
+                    <div class="thumbnail">
+                        <a  href="img/content_4.jpg" data-lightbox="content_4"><img src="img/content_4.jpg" alt="content_4" /></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a  href="img/content_5.jpg" data-lightbox="content_5"><img src="img/content_5.jpg" alt="content_5" /></a>
                     </div>  
                 </div>
             </div>
@@ -91,5 +88,12 @@
 	    </div>
 	  </div>
 	</div>
+
+<!--limks for JS files-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="dist/js/lightbox.min.js"></script>
+    <script type='text/javascript' src='script.js'></script>
+
   </body>
 </html>
