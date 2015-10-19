@@ -5,8 +5,11 @@
     <meta charset="utf-8">
 	<title>RigerWorkout</title>
 <!--limks for CSS files-->    
-    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">   
-    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">   
+    <!--<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">   -->
+    <!--<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
     <link rel="stylesheet" href="dist/css/lightbox.css">
     <link rel="stylesheet" href="main.css">
 
@@ -20,9 +23,10 @@
           <li><a href="#">Browse</a></li>
         </ul>
         <ul class="pull-right">
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">Log In</a></li>
-          <li><a class= "open_window" href="#">Help</a></li>
+          <!--<li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign">Active</button></li> For learning of modal windows-->
+          <li><a href="#sign" data-toggle="modal">Sign Up</a></li>
+          <li><a href="#login" data-toggle="modal">Log In</a></li>
+          <li><a href="#help" data-toggle="modal">Help</a></li>
         </ul>
       </div>
     </div>
@@ -69,31 +73,114 @@
     </div>
     
     <div class="learn-more">
-	  <div class="container">
-		<div class="row">
-	      <div class="col-md-4">
-			<h3>Кто мы?</h3>
-			<p>Мы являемся частью спортивной базы подготовки Олимпийских атлетов «Академия тяжелой атлетики им. Д. Ригерта», что дает нам возможность тренироваться бок о бок с сильнейшими спортсменами Мира,такими как Дмитрий Клоков и Хаджимурат Аккаев (тяжелая атлетика), Асламбек Хуштов и Заур Курмагомедов (греко-римская борьба), Оксана Савченко (плавание), Дмитрий Лапиков и Андрей Деманов (тяжелая атлетика).</p>
-			<p><a href="http://vk.com/rigertworkout">Наша группа ВКонтакте</a></p>
-	      </div>
-		  <div class="col-md-4">
-			<h3>Ригерт Давид Адамович</h3>
-			<p>Идея создания зала принадлежит моему отцу – Ригерт Давыду Адамовичу, а я продолжатель традиций, слегка переиначивающий их на свой лад.Идея создания зала функционального развития пришла сама собой. Зал в большей степени создал себя сам, он словно живет своей жизнью, а мы – механизмы, поддерживающие в нем жизнь.</p>
-			<p><a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B8%D0%B3%D0%B5%D1%80%D1%82,_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4_%D0%90%D0%B4%D0%B0%D0%BC%D0%BE%D0%B2%D0%B8%D1%87">Узнать больше</a></p>
-		  </div>
-		  <div class="col-md-4">
-			<h3>CROSSWORLD</h3>
-			<p>Четвертый выпуск журнала с интервью Владислава Ригерта - лидера движения RigertWorkout</p>
-			<p><a href="https://vk.com/doc253959195_360247501?hash=259102c1ea0b235d78&dl=5a196f70a46dbe0639">Открыть номер</a></p>
-		  </div>
-	    </div>
-	  </div>
+  	  <div class="container">
+    	   <div class="row">
+    	      <div class="col-md-4">
+        			<h3>Кто мы?</h3>
+        			<p>Мы являемся частью спортивной базы подготовки Олимпийских атлетов «Академия тяжелой атлетики им. Д. Ригерта», что дает нам возможность тренироваться бок о бок с сильнейшими спортсменами Мира,такими как Дмитрий Клоков и Хаджимурат Аккаев (тяжелая атлетика), Асламбек Хуштов и Заур Курмагомедов (греко-римская борьба), Оксана Савченко (плавание), Дмитрий Лапиков и Андрей Деманов (тяжелая атлетика).</p>
+        			<p><a href="http://vk.com/rigertworkout">Наша группа ВКонтакте</a></p>
+    	      </div>
+      		  <div class="col-md-4">
+          			<h3>Ригерт Давид Адамович</h3>
+          			<p>Идея создания зала принадлежит моему отцу – Ригерт Давыду Адамовичу, а я продолжатель традиций, слегка переиначивающий их на свой лад.Идея создания зала функционального развития пришла сама собой. Зал в большей степени создал себя сам, он словно живет своей жизнью, а мы – механизмы, поддерживающие в нем жизнь.</p>
+          			<p><a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B8%D0%B3%D0%B5%D1%80%D1%82,_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4_%D0%90%D0%B4%D0%B0%D0%BC%D0%BE%D0%B2%D0%B8%D1%87">Узнать больше</a></p>
+      		  </div>
+      		  <div class="col-md-4">
+          			<h3>CROSSWORLD</h3>
+          			<p>Четвертый выпуск журнала с интервью Владислава Ригерта - лидера движения RigertWorkout</p>
+          			<p><a href="https://vk.com/doc253959195_360247501?hash=259102c1ea0b235d78&dl=5a196f70a46dbe0639">Открыть номер</a></p>
+      		  </div>
+    	   </div>
+  	  </div>
 	</div>
 
-  <div class="overlay" title="окно"></div>
-    <div class="popup">
-    <div class="close_window">x</div>
-    <p>Тут будет текст</p>
+<!-- Modal window for SIGN IN -->
+<div class="container">
+    <div class="modal fade" id="sign">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+           <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">Registration</h3>
+           </div>
+           <div class="modal-body">
+              <p>Please, enter info about you.</p>
+              <form method="post">
+                  <label for="name">Name:</label>
+                  <input type="text"> <br>
+                  <label for="surname">Surname:</label>
+                  <input type="text"> <br>
+                  <label>Gender:</label>
+                  <label for="#m">Male</label>
+                  <input type="radio" name="gender" id="m" value="m" checked>
+                  <label for="#w">Female</label> 
+                  <input type="radio" name="gender" id="w" value="w"> <br> 
+                  <label for="age">Age:</label>
+                  <input type="text"> <br>
+                  <label for="email">E-mail:</label>
+                  <input type="text"> <br>
+                  <label for="login">Login:</label>
+                  <input type="text"> <br>
+                  <label for="pass">Password:</label>
+                  <input type="password"> <br>
+              </form> 
+           </div>
+           <div class="modal-footer">
+            <a href="" class="btn btn-default" data-dismiss="modal">Close</a>
+            <a href="" class="btn btn-primary">Download</a>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal window for LOG IN -->
+    <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">LogIn</h4>
+        </div>
+        <div class="modal-body">
+          <p>Please, enter your login and password</p>
+          <form method="post">
+                  <label for="login">Login:</label>
+                  <input type="text" name="login" id="login"> <br>
+                  <label for="pass">Password:</label>
+                  <input type="password" name="password" id="password"> <br>
+                  <input type="submit" value="LogIn" name="submit_login" class="btn btn-primary">
+          </form> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- Modal window for HELP -->
+    <div class="modal fade" id="help" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Help</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
   </div>
 
 <!--limks for JS files-->
@@ -101,6 +188,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="dist/js/lightbox.min.js"></script>
     <script type='text/javascript' src='script.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   </body>
 </html>

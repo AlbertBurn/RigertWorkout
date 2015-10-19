@@ -144,3 +144,8 @@
 .popup .close_window:active {
   background: #8f9be0;
 }
+
+.modal-body input{
+
+    margin-right: 10%;
+}
