@@ -113,9 +113,9 @@
                     <input type="text" class="form-control"> <br>
                     <label class="control-label">Gender:</label>
                     <label for="#m" class="control-label">Male</label>
-                    <input type="radio" class="form-control" name="gender" id="m" value="m" checked>
+                    <input type="radio" name="gender" id="m" value="m" checked>
                     <label for="#w" class="control-label">Female</label> 
-                    <input type="radio" class="form-control" name="gender" id="w" value="w"> <br> 
+                    <input type="radio" name="gender" id="w" value="w"> <br> 
                     <label for="age" class="control-label">Age:</label>
                     <input type="text" class="form-control"> <br>
                     <label for="email" class="control-label">E-mail:</label>
@@ -148,13 +148,15 @@
         </div>
         <div class="modal-body">
           <p>Please, enter your login and password</p>
-          <form method="post" role="form" class="form-horizontal">
-                  <label for="login">Login:</label>
-                  <input type="text" name="login" id="login"> <br>
-                  <label for="pass">Password:</label>
-                  <input type="password" name="password" id="password"> <br>
-                  <input type="submit" value="LogIn" name="submit_login" class="btn btn-primary">
-          </form> 
+          <div class="form-group">
+              <form method="post" role="form" class="form-horizontal">
+                      <label for="login">Login:</label>
+                      <input type="text" name="login" id="login" class="form-control"> <br>
+                      <label for="pass">Password:</label>
+                      <input type="password" name="password" id="password" class="form-control"> <br>
+                      <input type="submit" value="LogIn" name="submit_login" class="btn btn-primary">
+              </form> 
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
