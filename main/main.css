@@ -149,3 +149,16 @@
 
     margin-right: 10%;
 }
+
+.modal-body{
+    background-image: url('img/modal_background.jpg');
+    background-size: cover;
+}
+
+.modal-body p{
+  color: #EAEAEA;
+}
+
+.control-label{
+    color: #EAEAEA;
+}
