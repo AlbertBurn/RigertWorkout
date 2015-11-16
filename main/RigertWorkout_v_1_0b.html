@@ -47,9 +47,6 @@
                 <div class="col-md-4">
                     <div class="thumbnail">
                         <a  href="img/content_1.jpg" data-lightbox="content_1"><img src="img/content_1.jpg" alt="content_1" /></a>
-                        <!--<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>-->
-
-                        <!--<img src="img/content_1.jpg">-->
                     </div>
                     <div class="thumbnail">
                         <a  href="img/content_2.jpg" data-lightbox="content_2"><img src="img/content_2.jpg" alt="content_2" /></a>
@@ -104,28 +101,56 @@
               <h3 class="modal-title">Registration</h3>
            </div>
            <div class="modal-body">
-              <div class="form-group">
                 <p>Please, enter info about you.</p>
                 <form method="post" role="form" class="form-horizontal">
-                    <label for="name" class="control-label">Name:</label>
-                    <input type="text" class="form-control"> <br>
-                    <label for="surname" class="control-label">Surname:</label>
-                    <input type="text" class="form-control"> <br>
-                    <label class="control-label">Gender:</label>
-                    <label for="#m" class="control-label">Male</label>
-                    <input type="radio" name="gender" id="m" value="m" checked>
-                    <label for="#w" class="control-label">Female</label> 
-                    <input type="radio" name="gender" id="w" value="w"> <br> 
-                    <label for="age" class="control-label">Age:</label>
-                    <input type="text" class="form-control"> <br>
-                    <label for="email" class="control-label">E-mail:</label>
-                    <input type="text" class="form-control"> <br>
-                    <label for="login" class="control-label">Login:</label>
-                    <input type="text" class="form-control"> <br>
-                    <label for="pass" class="control-label">Password:</label>
-                    <input type="password" class="form-control"> <br>
+                  <div class="form-group">
+                      <label for="name" class="control-label col-sm-2">Name:</label>
+                    <div class="col-sm-8">  
+                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>   
+                  </div>
+
+                  <div class="form-group">
+                      <label for="surname" class="control-label col-sm-2">Surname:</label>
+                    <div class="col-sm-8">  
+                      <input type="text" class="form-control" id="surname" placeholder="Enter your surname">
+                    </div>   
+                  </div>
+                    
+                    <label class="control-label col-sm-2">Gender:</label>
+                    <label for="#m" class="control-label">Male</label>  
+                    <input type="radio" name="gender" id="m" value="m" checked>                          
+                    <label for="#w" class="control-label">Female</label>                     
+                    <input type="radio" name="gender" id="w" value="w">
+                                       
+                  <div class="form-group">  
+                    <label for="age" class="control-label col-sm-2">Age:</label>
+                    <div class="col-sm-8">  
+                      <input type="number" class="form-control" id="age" placeholder="Enter your age">
+                    </div> 
+                  </div>  
+
+                  <div class="form-group">  
+                    <label for="email" class="control-label col-sm-2">E-mail:</label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" placeholder="Enter your email address">
+                    </div>
+                  </div>  
+
+                  <div class="form-group"> 
+                    <label for="login" class="control-label col-sm-2">Login:</label>
+                    <div class="col-sm-8">  
+                      <input type="text" class="form-control" placeholder="Enter your login">
+                    </div>
+                  </div> 
+
+                  <div class="form-group"> 
+                    <label for="pass" class="control-label col-sm-2">Password:</label>
+                    <div class="col-sm-8">
+                      <input type="password" class="form-control" placeholder="Enter your password">
+                    </div>  
+                  </div>                     
                 </form> 
-              </div>
            </div>
            <div class="modal-footer">
             <a href="" class="btn btn-default" data-dismiss="modal">Close</a>
@@ -138,7 +163,7 @@
 
 <!-- Modal window for LOG IN -->
     <div class="modal fade" id="login" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-sm">
     
       <!-- Modal content-->
       <div class="modal-content">
@@ -150,11 +175,21 @@
           <p>Please, enter your login and password</p>
           <div class="form-group">
               <form method="post" role="form" class="form-horizontal">
-                      <label for="login">Login:</label>
-                      <input type="text" name="login" id="login" class="form-control"> <br>
-                      <label for="pass">Password:</label>
-                      <input type="password" name="password" id="password" class="form-control"> <br>
-                      <input type="submit" value="LogIn" name="submit_login" class="btn btn-primary">
+                <div class="form-group">
+                  <label for="login" class="control-label col-sm-4">Login:</label>
+                  <div class="col-sm-8">
+                    <input type="text" name="login" id="login" class="form-control" placeholder="Enter your login"> <br>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="pass" class="control-label col-sm-4">Password:</label>
+                  <div class="col-sm-8">  
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password"> <br>
+                  </div>
+                </div>      
+                      
+                <input type="submit" value="LogIn" name="submit_login" class="btn btn-primary">
               </form> 
           </div>
         </div>
